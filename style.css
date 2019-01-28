@@ -264,22 +264,87 @@ nav ul li a:hover {
 	margin: 0px auto;
 }
 
-/******* articulos*********/
+/******* articulos***********************************************/
 
-#main #articles_list{
+#articles_list{
 	margin-top: 80px;
 	width: 75%;	
 	float: right;
 }
 
-#main #articles_list article .thumb{
-	
+#articles_list .article-box {   
+    float: left;
+    /*margin-top: 50px;*/
+    overflow: hidden;
+    position: relative;
+    /*width: 100%;*/
+}
 
+#articles_list .article-title {
+/*
+    background: #ffffff none repeat scroll 0 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 108px;
+    padding-top: 30px;
+    position: absolute;
+    width: 100%;*/
+    background: #f2f2f2;
+    overflow: hidden;
+    margin-bottom: 20px;
 
+}
+#articles_list .article-title h3{
 }
 
 
-/******* fin articulos*********/
+#articles_list .event-date {
+
+
+/*    left: 0;
+    position: absolute; 
+    float: left;
+    margin-right: 10px;*/
+
+}
+#articles_list .event-date span {
+
+    background:#99e600;
+    color: #ffffff;
+    float: left;
+	width: 90px;
+	text-align: center;
+	margin-right: 20px;
+    /*
+    /*font-size: 17px;
+    height: 100px;
+    /*padding: 20px 0;  
+    width: 90px;
+    text-align: center;*/
+}
+/*
+.event-date span{
+	float: left;
+    width: 90px;
+
+}*/
+
+.event-date span strong {
+    /*font-size: 25px;
+    font-weight: bold;
+    line-height: 24px;*/
+}
+.event-date span span {
+ /*line-height: 19px; */
+}
+.event-date span span span { 
+	/*font-size: 14px; */
+}
+
+
+
+
+/******* fin articulos******************************************/
 
 /*footer*/
 
