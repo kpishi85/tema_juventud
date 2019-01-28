@@ -1,0 +1,323 @@
+/*
+Theme Name: Pasto Joven
+Theme URI: wwww.pastojoven.gov.co
+Descripcion: descripcion del tema
+Version: 1
+Autor: Francisco Escobar
+*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	max-width: 1920px;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+
+	padding-top: 30px; /* 56 Relleno superior igual a la altura de la cabecera*/
+}
+
+
+h1 {
+	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+#main-header {
+	background: #333;
+	color: white;
+	height: 80px; /*110 alto total de la cabecera*/
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+	z-index: 99999; /*enviamos la cabacera hacia enfrente */
+}	
+#main-header a {
+	color: white;
+}
+
+.social{
+	background: #999;
+	height: 30px;
+}
+
+.social nav{
+	float: right;
+}
+
+.social nav ul {
+	margin-bottom: 5px;
+	/*margin: 0;*/
+	padding: 0;
+	list-style: none;
+	padding-right: 20px;
+}	
+.social nav ul li {
+	display: inline-block;
+	line-height: 20px;
+}		
+.social nav ul li a {
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+}
+.social nav ul li a:hover {
+	background: #000;
+}
+
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+#logo-header:hover {
+	color: #0b76a6;
+}
+
+#logo-header .site-name {
+	display: block;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+	
+#logo-header .site-desc {
+	display: block;
+	font-weight: 300;
+	font-size: 0.8em;
+	color: #999;
+}
+	
+
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+}	
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-right: 20px;
+}	
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+}		
+nav ul li a {
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	background: #0b76a6;
+}
+
+/*#video_content {
+	background: yellow;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    /*position: absolute;
+    left: 0px;
+    bottom: 0px;
+    -webkit-transform: translate(-290px, 0px);
+    transform: translate(-290px, 0px);
+}*/				
+
+#main{
+	overflow: hidden;
+	width: 100%;
+	margin: 0px auto;
+	background: #f2f2f2; 
+}
+
+/****slide show****/
+#main #slideshow{
+	width: 100%;
+	/*float: left;*/
+	margin: 0px auto;
+	overflow: hidden;
+	margin-top: 80px; /*separacion entre  el header y slide*/
+	margin-bottom: 20px;
+}
+
+#main #slideshow .thumb{
+	width: 49%;
+	float: left;
+	margin-right: 2%
+}
+
+/****imgen oportunidades****/
+
+#main #slideshow_opt{
+
+}
+
+#slideoportunidades .slideshow_opt .img_opt{
+	width: 33.33%;
+	float: left;
+	/*margin-right: 2%		*/
+}
+
+#main #slideshow_opt img{
+	
+}
+
+#main #slideshow article{
+	float: left;
+	font-family: 'Open Sans', Arial,Helvetica,sans-serif;
+	font-size: 1rem;
+	text-align: justify;
+	width: 49%;
+	color: #fff;
+}
+
+#main #slideshow article h2{
+	font-family: 'Raleway', Helvetica,Arial,sans-serif;
+	font-size: 2rem;
+	font-weight: 300;
+	text-align: left;
+}
+
+#main #slideshow article .date{
+	font-family: 'Raleway', Helvetica,Arial,sans-serif;
+	font-size: .8rem;
+	font-weight: 500;
+	margin-bottom: 10px;
+	color: #777777;
+}
+
+/*----slideshow---*/
+
+#main #slideshow .slidesjs-pagination li{
+	background: #fff;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	display: inline-block;
+}
+#main #slideshow .slidesjs-pagination li a{
+	width: 20px;
+	height: 20px;
+	display: block;
+	font-size: 0px;
+}
+
+#main #slideshow .slidesjs-pagination li .active{
+	background: #333;
+}
+
+/*----Inicio slide oportunidades---*/
+
+#slideoportunidades{
+	margin-top: 150px;
+}
+
+#main #slideoportunidades .slidesjs-pagination li{
+	background: #999;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	display: inline-block;
+}
+#main #slideoportunidades .slidesjs-pagination li a{
+	width: 20px;
+	height: 20px;
+	display: block;
+	font-size: 0px;
+}
+
+#main #slideoportunidades .slidesjs-pagination li .active{
+	background: #900000;
+}
+
+/*Fin slide opourtunidades*/
+/*main contenido*/
+
+#main-content {
+	
+	width: 85%;
+	margin: 0px auto;
+}
+
+/******* articulos*********/
+
+#main #articles_list{
+	margin-top: 80px;
+	width: 75%;	
+	float: right;
+}
+
+#main #articles_list article .thumb{
+	
+
+
+}
+
+
+/******* fin articulos*********/
+
+/*footer*/
+
+#ft_widget{
+	background:#999;
+	margin: 0px auto;
+	text-align: center;
+	padding: 20px;
+	height: 200px;
+}
+/*#main .widget{
+	width: 100%;
+}
+
+footer .widget{
+	width: 25%;	
+}*/
+
+#ft_widget .widget{
+	display: inline-block;
+	width: 25%;
+}
+
+
+/******* autor*********/
+#ft_autor{
+	background: #333;
+	color: black;
+	text-align: center;
+	padding: 5px;
+	margin-top: 0px;
+}
+
+#ft_autor p {
+	margin: 0;
+}
+
+#ft_autor a {
+	color: white;
+	text-decoration: none;
+}

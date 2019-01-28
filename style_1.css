@@ -1,0 +1,399 @@
+/*
+Theme Name: Pasto Joven
+Theme URI: wwww.pastojoven.gov.co
+Descripcion: descripcion del tema
+Version: 1
+Autor: Francisco Escobar
+*/
+
+/*----Estilos generales*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	/*background: #191919;*/
+	font-size: 12pt;
+	font-family: "Open-Sans", Arial, Helvetica, sans-serif;
+}
+
+/*#slideshow{
+	width: 90%;
+	margin: 0px auto;
+}*/
+
+header, #main, footer{
+	width: 90%;
+	/*max-width:960px;*/
+	margin: 0px auto;	
+}
+
+a{
+	color:#bf2222;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+/* ---header---*/
+
+#main-header {
+	background: #333;
+	color: white;
+	height: 80px;
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+	z-index: 1;
+}	
+	#main-header a {
+		color: white;
+	}
+
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #0b76a6;
+	}
+	
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}
+	
+
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+			nav ul li a:hover {
+				background: #0b76a6;
+			}
+
+
+/*----menus y logo ---*/
+/*header{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	position: fixed;
+	width: 90%;
+}
+
+header #logo{
+	width: 40%;
+	float: left;
+	background: #191919;
+}
+
+header #logo p{
+	font-family: 'Raleway',Helvetica,Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 100;
+	text-align: center;
+	color: #fff;	
+}
+
+header #logo span{
+	text-align: center;
+	width: 100%;
+	display: block;
+	position: relative;
+	font-family: 'Raleway',Helvetica,Arial, sans-serif;
+	font-weight: 400;
+	right: 20px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+////menu-----
+
+header nav{
+	width: 60%;
+	float: right;
+	padding: 10px 0px;
+	margin-top: 30px;
+	background: #509050;	
+}
+header nav ul{
+	float: left;
+}
+header nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 30px;
+	margin-bottom: 10px;	
+}
+
+header nav ul li a{
+	font-family: 'Raleway', Helvetica,Arial;
+	font-weight: 300;
+	font-size: 1.3rem;
+	color: #fff;
+}
+
+header nav ul li a:hover{
+	color: #bf2222;
+
+}*/
+
+/*****MAIN****/
+
+#main{
+	overflow: hidden;
+}
+
+/****slide show****/
+#main #slideshow{
+	width: 100%;
+	/*float: left;*/
+	margin: 0px auto;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+#main #slideshow .thumb{
+	width: 49%;
+	float: left;
+	margin-right: 2%
+}
+
+#main #slideshow article{
+	float: left;
+	font-family: 'Open Sans', Arial,Helvetica,sans-serif;
+	font-size: 1rem;
+	text-align: justify;
+	width: 49%;
+	color: #fff;
+}
+
+#main #slideshow article h2{
+	font-family: 'Raleway', Helvetica,Arial,sans-serif;
+	font-size: 2rem;
+	font-weight: 300;
+	text-align: left;
+}
+
+#main #slideshow article .date{
+	font-family: 'Raleway', Helvetica,Arial,sans-serif;
+	font-size: .8rem;
+	font-weight: 500;
+	margin-bottom: 10px;
+	color: #777777;
+}
+
+#main #slideshow .slidesjs-pagination li{
+	background: #fff;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	display: inline-block;
+}
+#main #slideshow .slidesjs-pagination li a{
+	width: 20px;
+	height: 20px;
+	display: block;
+	font-size: 0px;
+}
+
+#main #slideshow .slidesjs-pagination li .active{
+	background: #333333;
+}
+
+/*main*/
+/*articulos*/
+
+#main #articles_list{
+	clear: both;
+	width: 75%;
+	float: left;
+}
+
+#main #articles_list article{
+	margin-bottom: 40px;
+	margin-right: 4%;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #333333;
+	overflow: hidden;
+
+}
+#main #articles_list article .thumb{
+	width: 35%;
+	margin-right: 4%;
+	float: left;
+	margin-bottom: 2%;
+}
+#main #articles_list article h2{
+	font-family: 'Raleway', 'Open-Sans', Helvetica,Arial,sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+#main #articles_list article h2 a{
+	color: #fff;
+}
+
+#main #articles_list article h2 a:hover{
+	text-decoration: none;
+	color: #bf2222;
+}
+
+#main #articles_list article .extract{
+	text-align: justify;
+	color: #fff;
+}
+
+#main #articles_list article .date{
+	font-size: .8rem;
+	color: #777777;
+	margin-bottom: 10px;
+}
+
+#main #articles_list #pagination {
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+#main #articles_list #pagination p{
+	text-align: center;	
+}
+
+#main #articles_list #pagination a{
+	margin: 0px 20px;
+	font-size: 1.5rem;
+	font-family: 'Raleway', Helvetica,Arial,sans-serif;
+	font-weight: 300;
+	display: inline-block;
+}
+
+/**ASIDE***/
+
+#main aside{
+	width: 25%;
+	float: left;	
+}
+
+#main .widget{
+	width: 100%;
+}
+
+.widget{
+	margin-bottom: 50px;
+	display: block;
+	float: left;
+}
+
+.widget h3{
+	font-size: 1.4rem;
+	font-family: 'Raleway',Open-Sans,Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	color: #333333;
+	margin-bottom: 10px;
+}
+
+.widget ul li{
+	list-style: none;
+	margin-bottom: 10px;	
+}
+
+.widget ul li a{
+	font-family: 'Open-Sans', Helvetica, Arial,sans-serif;
+	font-size: .9rem;
+	color: #777777;
+}
+
+.widget ul li a:hover{
+	color: #bf2222;
+	text-decoration: none;
+}
+
+/****footer   */
+
+footer{
+	width: 85%;
+}
+
+footer .widget{
+	width: 25%;	
+}
+
+footer #copyright{
+	width: 100%;
+	clear: both;
+	text-align: center;
+	padding: 10px;
+	color: #fff;
+	font-family: 'Raleway', 'Open-Sans', Helvetica, Arial,sans-serif;
+	font-size: .9rem;
+}
+
+/*blog*****/
+
+#main #articles_list #cat_name{
+	font-family: 'Raleway',Open-Sans, Arial, sans-serif;
+	font-size: 2rem;
+	color: #333333;
+	font-weight: 500;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #333333;
+	margin-right: 30px;
+	padding-bottom: 10px;
+}
+
+
+/*comentarios**borrar**/
+
+#main #articles_list #comentarios{
+	margin-bottom: 40px;
+	margin-right: 4%;
+}
+
+#main #articles_list #comentarios > h3{
+	font-size: 1.3rem;
+	font-family: 'Raleway',Open-Sans,Helvetica, Arial, sans-aja_comentarios{
+	weight: 500;
+	margin-bottom: 20px;
+	color: #333333;	
+}
+
+#main #articles_list #caja_comentarios{
+	height: 70px;
+	background: #ccc;
+}	
